@@ -34,38 +34,38 @@ class Memory extends Component {
     } else {
       alert("You LOSE Dumb-dumb! \n Try Again!");
       // Images.chosen = false;
-      this.setState({score: 0});
+      this.setState({ score: 0 });
       window.location.reload();
     }
   }
 
 
-
-
   render() {
     return (
-      <Container>
+      <div id="page">
 
         <NavBar score={this.state.score}>
           <Counter score="{this.state.score}" />
         </NavBar>
 
-        <Header />
+        <Container>
 
-        <div id="tiles">
-          {this.props.tiles.map(tile => {
-            return <Tile
-              key={tile.id}
-              alt={tile.alt}
-              src={tile.src}
-              chosen={tile.chosen}
-              onClick={() => this.handleChosen(tile)} />
-          })}
-        </div>
+          <Header />
 
+          <div id="tiles">
+            {this.props.tiles.map(tile => {
+              return <Tile
+                key={tile.id}
+                alt={tile.alt}
+                src={tile.src}
+                chosen={tile.chosen}
+                onClick={() => this.handleChosen(tile)} />
+            })}
+          </div>
+
+        </Container>
         <Footer />
-
-      </Container>
+      </div>
     )
   }
 }

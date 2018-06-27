@@ -29,3 +29,8 @@ ul {
   list-style-type: none;
 }
 
+#footer {
+  text-align: right;
+  font-size: 12px;
+}
+
