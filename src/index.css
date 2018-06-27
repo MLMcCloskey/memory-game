@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('./assets/images/country-quilt.png')
+}
+
+#tiles {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+span {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.photos {
+  display: inline-block;
+}
+
+.images {
+  max-width: 150px;
+  margin: 20px 15px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
