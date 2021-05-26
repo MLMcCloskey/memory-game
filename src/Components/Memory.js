@@ -30,7 +30,9 @@ class Memory extends Component {
       this.setState({ score: this.state.score + 1 });
       tile.chosen = true;
       // console.log();
+      if (this.state.score < 12) {
       shuffleArray(Images);
+      } else { alert("You win!!"); }
     } else {
       alert("You LOSE Dumb-dumb! \n Try Again!");
       // Images.chosen = false;
